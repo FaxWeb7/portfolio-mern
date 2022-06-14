@@ -4,8 +4,8 @@ const PortfolioItem = ({ src, title, gitLink, webLink }) => {
       <img className="portfolio__item-img" src={src} alt="FaxWeb faxweb"></img>
       <div className="portfolio__item-title">{title}</div>
       <div className="portfolio__item-links">
-        <a className="portfolio__item-link" href={gitLink} target="_blank">GitHub</a>
-        <a className="portfolio__item-link" href={webLink} target="_blank">Посмотреть сайт</a>
+        <a className="portfolio__item-link" href={gitLink} target="_blank" rel="noreferrer">GitHub</a>
+        <a className="portfolio__item-link" href={webLink} target="_blank" rel="noreferrer">Посмотреть сайт</a>
       </div>
     </li>
   )

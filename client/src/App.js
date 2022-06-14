@@ -1,3 +1,5 @@
+import { Fragment } from 'react'
+import 'aos/dist/aos.css';
 import NavBar from './components/navbar/Navbar'
 import Home from './components/home/Home'
 import Skills from './components/skills/Skills'
@@ -6,8 +8,6 @@ import Reviews from './components/reviews/Reviews'
 import Contacts from './components/contacts/Contacts'
 import Footer from './components/footer/Footer'
 import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { Fragment } from 'react'
 
 const App = () => {
   AOS.init();

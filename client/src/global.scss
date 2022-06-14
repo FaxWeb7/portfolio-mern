@@ -74,8 +74,17 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: 0;
+  width: 15px;
 }
+::-webkit-scrollbar-track {
+  background-color: darkgrey;
+}
+::-webkit-scrollbar-thumb {
+  background: #052E46;
+  border-radius: 10px;
+}
+
+
 
 .wrapper {
   display: flex;
@@ -105,11 +114,12 @@ body {
   }
 }
 
-.home, .reviews{
+.home{
   min-height: 100vh;
   max-height: 100vh;
   // scroll-snap-align: start; //for effect scroll
 }
+
 
 .bg-circle-1{
   position: fixed;
