@@ -2,7 +2,9 @@ import './reviews.scss'
 
 const Reviews = () => {
   return (
-    <section>Reviews</section>
+    <section className='reviews' id="reviews">
+      
+    </section>
   )
 }
 

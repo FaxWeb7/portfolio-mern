@@ -52,7 +52,7 @@ $color-sec: rgb(172, 17, 233);
 $color-sec-light: rgb(172, 17, 233, 0.274);
 $color-title: #66baff;
 $color-bg: #42309a;
-$color-bg-light: #42309a85;
+$color-bg-light: #42309a50;
 
 %font {
   font-family: "Open-Sans", sans-serif;
@@ -81,6 +81,9 @@ html {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  // scroll-snap-type: y mandatory; //for effect scroll
+  // overflow-y: scroll; //for effect scroll
+  // height: 100vh; //for effect scroll
 }
 .main {
   flex: 1 0 auto;
@@ -102,9 +105,10 @@ body {
   }
 }
 
-.home{
+.home, .reviews{
   min-height: 100vh;
   max-height: 100vh;
+  // scroll-snap-align: start; //for effect scroll
 }
 
 .bg-circle-1{
@@ -222,5 +226,36 @@ body {
   padding: $containerYPadding + px $containerXPadding + px;
   @media(max-width: 500px){
     width: $phone-width;
+  }
+}
+
+.global-title{
+  position: relative;
+  font-size: 40px;
+  font-weight: bold;
+  color: $color-title;
+  font-family: 'Open-Sans', sans-serif;
+  @media(max-width: 767px){
+    font-size: 30px;
+  }
+  @media(max-width: 1075px){
+    font-size: 36px;
+  }
+  @media(max-width: 430){
+    font-size: 32px;
+  }
+}
+
+.global-subtitle{
+  position: relative;
+  font-size: 15.5px;
+  font-weight: normal;
+  color: rgba(255,255,255,0.5);
+  font-family: 'Open-Sans', sans-serif;
+  @media(max-width: 1075px){
+    font-size: 14px;
+  }
+  @media(max-width: 767px){
+    font-size: 13px;
   }
 }

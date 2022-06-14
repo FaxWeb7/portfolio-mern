@@ -9,7 +9,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Fragment } from 'react'
 
-
 const App = () => {
   AOS.init();
   return (

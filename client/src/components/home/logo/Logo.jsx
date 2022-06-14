@@ -64,8 +64,6 @@ const Logo = () => {
     <div className='logo-container'>
       <div className="container">
         <div className='logo'> 
-          {/* <div className="circles">
-          </div> */}
           <img src={logo} alt="logo" />
         </div>
 
