@@ -37,5 +37,8 @@ app.get("/api/portfolio", (req, res) => {
     .find()
     .then((result) => res.send(result))
     .catch((err) => console.log(err))
-  
+});
+
+app.post("/api/sendmail", (req, res) => {
+  console.log(req.body);
 });
