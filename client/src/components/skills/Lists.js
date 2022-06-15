@@ -2,12 +2,12 @@ import { FrontExperience, BackExperience } from "./Experiences";
 
 export const Lists = [
   {
-    _id: 1,
+    _id: 34,
     title: 'Frontend-разработка',
     exp: FrontExperience,
   },
   {
-    _id: 2,
+    _id: 234,
     title: 'Backend-разработка',
     exp: BackExperience,
   }

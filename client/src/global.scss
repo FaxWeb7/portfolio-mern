@@ -29,6 +29,14 @@ button {
   background-color: white;
 }
 
+input, textarea {
+  outline: none;
+  &:active, &:hover, &:focus {
+    outline: 0;
+    outline-offset: 0;
+  }
+}
+
 /* VARS */
 $containerWidth: 1450;
 $containerYPadding: 10;
@@ -118,6 +126,12 @@ body {
   min-height: 100vh;
   max-height: 100vh;
   // scroll-snap-align: start; //for effect scroll
+}
+
+.contacts{
+  @media(min-width: 1023px){
+    max-height: 100vh;
+  }
 }
 
 
@@ -240,6 +254,7 @@ body {
 }
 
 .global-title{
+  white-space: nowrap;
   position: relative;
   font-size: 40px;
   font-weight: bold;
@@ -257,6 +272,7 @@ body {
 }
 
 .global-subtitle{
+  white-space: nowrap;
   position: relative;
   font-size: 15.5px;
   font-weight: normal;

@@ -1,17 +1,25 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const portfolioSchema = new Schema({
-  picture: {
-    name: String,
-    image: Buffer,
+const portfolioListSchema = new Schema({
+  src: {
+    type: String,
+    required: true,
   },
   title: {
     type: String,
     required: true,
   },
+  gitLink: {
+    type: String,
+    required: true,
+  },
+  webLink: {
+    type: String,
+    required: true,
+  }
 });
 
-const Portfolio = mongoose.model("Portfolio", portfolioSchema);
+const PortfolioList = mongoose.model("PortfolioList", portfolioListSchema);
 
-module.exports = Portfolio;
+module.exports = PortfolioList;

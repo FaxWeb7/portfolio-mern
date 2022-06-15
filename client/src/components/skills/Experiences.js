@@ -33,27 +33,27 @@ export const FrontExperience = [
 
 export const BackExperience = [
   {
-    _id: 1,
+    _id: 7,
     title: 'Node JS',
     level: 'Experienced'
   },
   {
-    _id: 2,
+    _id: 8,
     title: 'Mongo DB',
     level: 'Experienced'
   },
   {
-    _id: 3,
+    _id: 9,
     title: 'Python',
     level: 'Basic'
   },
   {
-    _id: 4,
+    _id: 0,
     title: 'Git',
     level: 'Experienced'
   },
   {
-    _id: 5,
+    _id: 99,
     title: 'Gulp',
     level: 'Experienced'
   }

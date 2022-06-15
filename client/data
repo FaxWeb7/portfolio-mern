@@ -7,13 +7,13 @@
 [+] - skills
   [+] - qualification-item-component
 
-[] - portfolio
-  [] - component for button
-  [] - portfolio-item-component
+[+] - portfolio
+  [+] - component for button
+  [+] - portfolio-item-component
   
-[] - reviews
-  [] - reviews-item-component
-  [] - slider
+[+] - reviews
+  [+] - reviews-item-component
+  [+] - slider
 
 [] - contacts
   [] - contact-links

@@ -11,8 +11,8 @@ const Skills = () => {
           <div className="skills__content">
             {Lists.map(({ _id, title, exp }) => {
               return(
-                <div className="skills__content-anim" data-aos="zoom-in-up" data-aos-duration="1000">
-                  <div className="skills__list-wrapper" key={_id}>
+                <div className="skills__content-anim" data-aos="zoom-in-up" data-aos-duration="1000" key={_id}>
+                  <div className="skills__list-wrapper">
                     <h2 className="skills__list-title">{title}</h2>
                     <ul className="skills__list">
                       {exp.map(({ _id, title, level }) => {

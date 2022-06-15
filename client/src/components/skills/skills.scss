@@ -43,6 +43,7 @@
     padding: 50px 140px;
     cursor: pointer;
     transition: background 0.3s linear;
+    border: 1px solid transparent;
     &:hover{
       background: $color-bg-light;
       border: 1px solid #685da0;
