@@ -4,6 +4,8 @@ const methodOverride = require("method-override");
 const dotenv = require("dotenv").config();
 const mongoose = require("mongoose");
 const PortfolioList = require("./models/portfolio");
+const transporter = require("./helpers/transporter")
+const nodemailer = require('nodemailer');
 const chalk = require("chalk");
 const successMsg = chalk.bgKeyword("green").white.bold;
 const errorMsg = chalk.bgKeyword("white").red;
@@ -40,5 +42,15 @@ app.get("/api/portfolio", (req, res) => {
 });
 
 app.post("/api/sendmail", (req, res) => {
-  console.log(req.body);
+  const { message } = req.body;
+
+  const mailOptions = {
+    from: process.env.EMAIL,
+    to: process.env.EMAIL,
+    subject: 'Заявка с сайта FaxWeb.ru',
+    text: message
+  }
+
+  transporter.sendMail(mailOptions, (err, info) => err ? res.status(500) : res.status(200))
+  res.status(200)
 });

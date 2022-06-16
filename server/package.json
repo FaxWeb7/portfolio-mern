@@ -23,7 +23,8 @@
     "method-override": "^3.0.0",
     "mongoose": "^6.3.2",
     "morgan": "^1.10.0",
-    "node-base64-image": "^2.0.4"
+    "node-base64-image": "^2.0.4",
+    "nodemailer": "^6.7.5"
   },
   "engines": {
     "node": "16.15.0"

@@ -1,28 +1,31 @@
 import img1 from '../../assets/reviews/2.webp'
+import img2 from '../../assets/reviews/1.webp'
+import img3 from '../../assets/reviews/3.webp'
+import img4 from '../../assets/reviews/4.webp'
 
 export const ReviewList = [
   {
     img: img1,
-    name: 'Александр, 20 лет',
+    name: 'Николай, 27 лет',
     date: '14 апреля 2022',
-    text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti facilis ex nam omnis explicabo assumenda numquam eaque quas aperiam quae, ut maxime veniam atque, velit veritatis quos expedita nemo ipsa!'
+    text: 'Понравилось работать с Артёмом и его могу рекомендовать. Внимательно относится к поставленной задаче, ни разу не было такого, чтобы он что-то пообещал, и не сделал в намеченный срок. Это очень нравится и выгодно отличает этого человека от других фриласеров, с которыми мне приходилось работать.'
   },
   {
-    img: img1,
-    name: 'Александр, 21 лет',
-    date: '14 апреля 2022',
-    text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti facilis ex nam omnis explicabo assumenda numquam eaque quas aperiam quae, ut maxime veniam atque, velit veritatis quos expedita nemo ipsa!'
+    img: img2,
+    name: 'Наталья, 34 года',
+    date: '5 марта 2022',
+    text: 'Артём – настоящий профессионал, действительно, человек с большим опытом в области вёрстки сайтов, интернет-проектов. Мы поставили перед ним очень не простую задачу, и он достаточно оперативно и на высоком уровне ее выполнил. Спасибо. Если появятся новые задачи, однозначно, обратимся только к нему.'
   }, 
   {
-    img: img1,
-    name: 'Александр, 22 лет',
-    date: '14 апреля 2022',
-    text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti facilis ex nam omnis explicabo assumenda numquam eaque quas aperiam quae, ut maxime veniam atque, velit veritatis quos expedita nemo ipsa!'
+    img: img3,
+    name: 'Андрей, 25 лет',
+    date: '21 марта 2022',
+    text: 'Артёма можно рекомендовать как настоящего профессионала, ответственно относящегося ко всем этапам работы. В итоге был свёрстан проект, отвечающий всем заявленным требованиям. Я полностью удовлетворены качеством и сроками исполнения работы.'
   },
   {
-    img: img1,
-    name: 'Александр, 23   лет',
-    date: '14 апреля 2022',
-    text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti facilis ex nam omnis explicabo assumenda numquam eaque quas aperiam quae, ut maxime veniam atque, velit veritatis quos expedita nemo ipsa!'
+    img: img4,
+    name: 'Мария, 29 лет',
+    date: '17 мая 2022',
+    text: 'Хотела бы выразить благодарность Артёму за его проделанную работу. Все было сделано на высоком уровне, учтены все замечания. Артём в ходе работы над проектом проявлял инициативу, проанализировал техническое задание, подсказал нам - в каких местах можно сделать лучше. Мы остались очень довольны сотрудничеством.'
   },
 ] 

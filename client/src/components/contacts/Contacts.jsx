@@ -3,23 +3,23 @@ import { useForm } from 'react-hook-form'
 import './contacts.scss'
 
 const Contacts = () => {
-  const { register, formState: { errors, isValid },  handleSubmit, reset } = useForm({mode: "onChange"});
+  const { register, formState: { errors, isValid },  handleSubmit, reset } = useForm({mode: "onBlur"});
 
   const onSubmit = ({name, email, mess, phone}) => {
-    if (phone[4]){
-      console.log(`Name: ${name}, Email: ${email}, Phone: ${phone} Message: ${mess}`);
-    } else{
-      console.log(`Name: ${name}, Email: ${email}, Phone: не указан Message: ${mess}`);
+    var dataToSend = {message: `Имя: ${name}\nЭл.почта: ${email}\nТелефон: ${phone[4] ? phone : 'не указан'}\nСообщение: ${mess}`};
+    var formBody = [];
+    for (var key in dataToSend) {
+      var encodedKey = encodeURIComponent(key);
+      var encodedValue = encodeURIComponent(dataToSend[key]);
+      formBody.push(encodedKey + "=" + encodedValue);
     }
-    const data = {
-      name,
-      email,
-      mess,
-      phone
-    }
+    formBody = formBody.join("&");
     fetch('/api/sendmail', {
-      method: "post",
-      body: JSON.stringify(data)
+      method: "POST",
+      body: formBody,
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+      },
     })
     reset();
   }
