@@ -30,22 +30,22 @@ const NavBar = () => {
         <div className="navbar__inner">
           <ul className="navbar__list navigation">
             <li>
-              <a href="/#home" className="navbar__list-item">
+              <a href="/#home" className="navbar__list-item yakor">
                 <AiOutlineHome className='navbar__icon active-nav'/>
               </a>
             </li>
             <li>
-              <a href="/#skills" id='skill' className="navbar__list-item">
+              <a href="/#skills" id='skill' className="navbar__list-item yakor">
                 <BiCodeAlt className='navbar__icon' />
               </a>
             </li>
             <li>
-              <a href="/#portfolio" className="navbar__list-item">
+              <a href="/#portfolio" className="navbar__list-item yakor">
                 <BiBook className='navbar__icon' />
               </a>
             </li>
             <li>
-              <a href="/#reviews" className="navbar__list-item">
+              <a href="/#reviews" className="navbar__list-item yakor">
                 <RiServiceLine className='navbar__icon' />
               </a>
             </li>
