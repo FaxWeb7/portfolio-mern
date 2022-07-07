@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react'
 import PortfolioItem from './PortfolioItem'
 import './portfolio.scss'
+import {SERVER_URL} from '../../constants'
 
 const Portfolio = () => {
   const [PortfolioList, setPortfolioList] = useState([])
   useEffect(() => {
-    fetch('/api/portfolio')
+    fetch(`${SERVER_URL}/api/portfolio`)
       .then(res => res.json())
       .then(result => setPortfolioList(result))
       .catch(err => console.log(err))

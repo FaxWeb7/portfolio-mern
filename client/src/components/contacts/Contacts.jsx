@@ -1,6 +1,7 @@
 import { LinksList } from './LinksList'
 import { useForm } from 'react-hook-form'
 import './contacts.scss'
+import {SERVER_URL} from '../../constants'
 
 const Contacts = () => {
   const { register, formState: { errors, isValid },  handleSubmit, reset } = useForm({mode: "onBlur"});
@@ -14,7 +15,7 @@ const Contacts = () => {
       formBody.push(encodedKey + "=" + encodedValue);
     }
     formBody = formBody.join("&");
-    fetch('/api/sendmail', {
+    fetch(`${SERVER_URL}/api/sendmail`, {
       method: "POST",
       body: formBody,
       headers: {

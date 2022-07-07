@@ -15,9 +15,9 @@
   [+] - reviews-item-component
   [+] - slider
 
-[] - contacts
-  [] - contact-links
-    [] - contact-link-component
-  [] - contact-form
+[+] - contacts
+  [+] - contact-links
+    [+] - contact-link-component
+  [+] - contact-form
 
-[] - footer
+[+] - footer
