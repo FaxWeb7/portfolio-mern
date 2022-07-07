@@ -1,27 +1,32 @@
 {
-  "name": "personal-portfolio",
+  "name": "node-js",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "MyFirstDescription",
+  "main": "app.js",
   "scripts": {
-    "server": "npm run start --prefix server",
-    "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "start": "nodemon server.js --ignore client"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Artemka0-7/personal-portfolio.git"
-  },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "website"
+  ],
+  "author": "Artem P.",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Artemka0-7/personal-portfolio/issues"
+  "devDependencies": {
+    "nodemon": "^2.0.16"
   },
-  "homepage": "https://github.com/Artemka0-7/personal-portfolio#readme",
   "dependencies": {
-    "concurrently": "^7.2.1",
-    "react-hook-form": "^7.32.1",
-    "react-icons": "^4.4.0"
+    "chalk": "^4.1.2",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.7",
+    "express": "^4.18.1",
+    "http-proxy-middleware": "^2.0.6",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.3.2",
+    "morgan": "^1.10.0",
+    "node-base64-image": "^2.0.4",
+    "nodemailer": "^6.7.5"
+  },
+  "engines": {
+    "node": "16.15.0"
   }
 }
