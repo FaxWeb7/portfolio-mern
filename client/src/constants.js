@@ -1,1 +1,1 @@
-export const SERVER_URL = "https://faxweb.ru:5000"
+export const SERVER_URL = "https://pportfolio-server.herokuapp.com"
