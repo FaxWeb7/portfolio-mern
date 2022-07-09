@@ -7,13 +7,13 @@ import Reviews from "./components/reviews/Reviews";
 import Contacts from "./components/contacts/Contacts";
 import Footer from "./components/footer/Footer";
 import AOS from "aos";
-import Helmet from "react-helmet";
+// import Helmet from "react-helmet";
 
 const App = () => {
   AOS.init();
   return (
     <>
-      <Helmet
+      {/* <Helmet
         title="FaxWeb"
         meta={[
           {
@@ -31,7 +31,7 @@ const App = () => {
             'content': "Артём Павловский"
           }
         ]}
-      />
+      /> */}
       <div className="bg">
         <div className="bg-circle-1"></div>
         <div className="bg-circle-2"></div>
