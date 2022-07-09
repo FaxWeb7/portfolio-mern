@@ -17,7 +17,8 @@
     "sass": "^1.52.3",
     "slick-carousel": "^1.8.1",
     "swiper": "^8.2.4",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "react-icons": "^4.4.0"
   },
   "scripts": {
     "start": "PORT=443 react-scripts start",
