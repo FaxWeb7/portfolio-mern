@@ -13,25 +13,6 @@ const App = () => {
   AOS.init();
   return (
     <>
-      {/* <Helmet
-        title="FaxWeb"
-        meta={[
-          {
-            'name': "description",
-            'content':
-              "FaxWeb - начинающий Front-End разработчик, делающий крутые сайты.",
-          },
-          {
-            'name': "keywords",
-            'content':
-              "FaxWeb, faxweb, faxweb артем, Артем Павловский, Артем, Павловский, артем, артем павловский, Артем Павловский Разработчик, Front-End Developer, Back-End-Developer, React, Node.js, Next.js",
-          },
-          {
-            'name': "Author",
-            'content': "Артём Павловский"
-          }
-        ]}
-      /> */}
       <div className="bg">
         <div className="bg-circle-1"></div>
         <div className="bg-circle-2"></div>

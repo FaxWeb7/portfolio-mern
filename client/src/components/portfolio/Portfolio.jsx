@@ -1,8 +1,17 @@
 import PortfolioItem from './PortfolioItem'
 import './portfolio.scss'
-import { PortfolioList } from './PortfolioList'
+import { useState } from 'react'
+import { useEffect } from 'react'
 
 const Portfolio = () => {
+  const [ PortfolioList, setPortfolioList ] = useState([]) 
+  useEffect(() => {
+    fetch(`/api/portfolio`)
+      .then(data => data.json())
+      .then(data => setPortfolioList(data))
+      .catch(error => console.log(error)) 
+  }, [])
+
   return (
     <section className='portfolio' id='portfolio'>
       <div className="container">
