@@ -73,6 +73,14 @@
         color: $color-bg;
         background: $color-pri;
       }
+      &.once{
+        color: $color-bg;
+        background: $color-pri;
+        &:hover{
+          background: $color-bg;
+          color: $color-pri;
+        }
+      }
     }
   }
   @media(max-width: 1330px){

@@ -20,7 +20,7 @@ const Footer = () => {
             })}
           </ul>
           <ul className="footer__link-list">
-            <li className="footer__link-item"><a href="mailto:faxweb7@gmail.com"><MdOutlineEmail /></a></li>
+            <li className="footer__link-item"><a href="mailto:artem@faxweb.ru"><MdOutlineEmail /></a></li>
             <li className="footer__link-item"><a href="https://api.whatsapp.com/send/?phone=79260534553"><BsWhatsapp /></a></li>
             <li className="footer__link-item"><a href="tg://resolve?domain=faxweb_w"><FaTelegramPlane /></a></li>
           </ul>
