@@ -3,7 +3,7 @@ const morgan = require("morgan");
 const methodOverride = require("method-override");
 const dotenv = require("dotenv").config();
 const mongoose = require("mongoose");
-const PortfolioList = require("./models/portfolio");
+const PortfolioItem = require("./models/portfolioItem");
 const transporter = require("./helpers/transporter")
 const nodemailer = require('nodemailer');
 const chalk = require("chalk");
@@ -35,7 +35,7 @@ app.use(express.urlencoded({ extended: false }));
 
 
 app.get("/api/portfolio", (req, res) => {
-  PortfolioList
+  PortfolioItem
     .find()
     .then((result) => res.send(result))
     .catch((err) => console.log(err))
