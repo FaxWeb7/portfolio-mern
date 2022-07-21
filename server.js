@@ -33,7 +33,7 @@ app.use(
   )
 );
 app.use(cors({
-  origin: process.env.CLIENT_URL
+  origin: "*"
 }))
 app.use(methodOverride("_method"));
 app.use(express.urlencoded({ extended: false }));
