@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const portfolioListScItem = new Schema({
-  src: {
+const portfolioItem = new Schema({
+  id: {
     type: String,
     required: true,
   },
@@ -20,6 +20,6 @@ const portfolioListScItem = new Schema({
   }
 });
 
-const PortfolioItem = mongoose.model("PortfolioList", portfolioListScItem);
+const PortfolioList = mongoose.model("PortfolioItem", portfolioItem);
 
-module.exports = PortfolioItem;
+module.exports = PortfolioList;

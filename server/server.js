@@ -3,16 +3,18 @@ const morgan = require("morgan");
 const methodOverride = require("method-override");
 const dotenv = require("dotenv").config();
 const mongoose = require("mongoose");
-const PortfolioItem = require("./models/portfolioItem");
+const PortfolioList = require("./models/portfolioItem");
+const SkillList = require("./models/skillitem")
 const transporter = require("./helpers/transporter")
 const nodemailer = require('nodemailer');
 const chalk = require("chalk");
+const cors = require('cors')
+
 const successMsg = chalk.bgKeyword("green").white.bold;
 const errorMsg = chalk.bgKeyword("white").red;
 const reqMsg = chalk.bgKeyword("purple").cyan.bold.underline;
 
 const app = express();
-app.set("view engine");
 
 mongoose  
   .connect(process.env.MONGO_URL)  
@@ -30,12 +32,22 @@ app.use(
     reqMsg(":method :url :status :res[content-length] - :response-time ms")
   )
 );
+app.use(cors({
+  origin: process.env.CLIENT_URL
+}))
 app.use(methodOverride("_method"));
 app.use(express.urlencoded({ extended: false }));
 
 
 app.get("/api/portfolio", (req, res) => {
-  PortfolioItem
+  PortfolioList
+    .find()
+    .then((result) => res.send(result))
+    .catch((err) => console.log(err))
+});
+
+app.get("/api/skills", (req, res) => {
+  SkillList
     .find()
     .then((result) => res.send(result))
     .catch((err) => console.log(err))

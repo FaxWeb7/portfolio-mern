@@ -1,8 +1,25 @@
 import PortfolioItem from './PortfolioItem'
 import './portfolio.scss'
-import { PortfolioList } from './PortfolioList'
+import axios from 'axios'
+import { useEffect } from 'react'
+import { useState } from 'react'
+import {SERVER_URL} from '../../constants'
 
 const Portfolio = () => {
+  const [PortfolioList, setPortfolioList] = useState([])
+  useEffect(() => {
+    fetchData()
+  }, [])
+
+  const fetchData = async () => {
+    try{
+      const response = await axios.get(`${SERVER_URL}/api/portfolio`).then(({ data }) => data)
+      return setPortfolioList(response)
+    } catch(e) {
+      console.log(e)
+    }
+  }
+
   return (
     <section className='portfolio' id='portfolio'>
       <div className="container">
